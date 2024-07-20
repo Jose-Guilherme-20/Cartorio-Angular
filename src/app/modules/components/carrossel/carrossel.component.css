@@ -1,0 +1,15 @@
+c-carousel {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+c-carousel-inner {
+  max-width: 80%;
+}
+c-carousel-control {
+  width: auto;
+  margin: 150px;
+}
+.visually-hidden {
+  border: 1px solid red;
+}

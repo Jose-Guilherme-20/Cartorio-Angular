@@ -1,0 +1,48 @@
+<section class="container-header">
+  <header>
+    <div class="header-left">
+      <div class="img-header-left">
+        <img
+          src="../../../../assets/image/logo.png"
+          alt="Logo-justiça-federal"
+        />
+      </div>
+      <div class="header-text-left">
+        <h1>Cartório</h1>
+        <p>
+          2° Tabelionato de Notas - Luziânia-GO
+          <br />
+          <span>Oficial respondente: Marinalva Aparecida de Santana</span>
+        </p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="info-wpp">
+        <p>
+          <img
+            src="../../../../assets/icons/wpp.svg"
+            alt="contato-whatsapp"
+          />3601-1368
+        </p>
+        <p>
+          <img
+            src="../../../../assets/icons/phone-office.svg"
+            alt="contato-telefone-fixo"
+          />3601-1368
+        </p>
+      </div>
+    </div>
+  </header>
+</section>
+
+<!--Links de navegação Menu -->
+
+<section class="menu">
+  <nav class="menu-navigation">
+    <ul>
+      <li *ngFor="let link of routesList">
+        <a [href]="link.path">{{ link.label }}</a>
+      </li>
+    </ul>
+  </nav>
+</section>

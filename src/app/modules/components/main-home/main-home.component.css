@@ -1,0 +1,49 @@
+.container {
+  background-color: rgb(12, 81, 128);
+  max-width: 80%;
+  margin-top: 12px;
+  height: auto;
+}
+.container-home-main {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 6%;
+  height: auto;
+}
+.container-home-main .form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+.form h1 {
+  text-align: center;
+  color: white;
+}
+.form input,
+textarea {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.form button {
+  border-radius: 5px;
+  max-width: 7rem;
+  padding: 4px;
+  margin-left: 35%;
+  margin-bottom: 6px;
+  background-color: black;
+  color: white;
+}
+.container-localizacao h2 {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.container-iframe {
+  width: 25rem;
+  height: 15.8rem;
+  margin-left: 3rem;
+  margin-top: 0.4rem;
+}
