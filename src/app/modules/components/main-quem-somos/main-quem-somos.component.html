@@ -1,0 +1,44 @@
+<section class="container">
+  <section class="container-quem-somos">
+    <div class="section-pilares">
+      <div class="section" *ngIf="currentSection === 'missao'">
+        <h2>Missão</h2>
+        <p>
+          Oferecer prestação de serviços Notariais com segurança jurídica,
+          orientando os clientes de forma clara sobre cada ato jurídico
+          pretendido, nos tornando uma referência na prestação de serviços
+          Notariais no Estado.
+        </p>
+      </div>
+      <div class="section" *ngIf="currentSection === 'visao'">
+        <h2>Visão</h2>
+        <p>
+          Capacitar-nos cada dia mais trazendo um atendimento excelente e
+          harmonioso a toda população.
+        </p>
+      </div>
+      <div class="section" *ngIf="currentSection === 'valores'">
+        <h2>Valores</h2>
+        <p>
+          Com nosso trabalho em equipe ajudar nossos clientes a realizar seu
+          negócio jurídico dentro da legalidade, com celeridade e transparência.
+          Trazendo aos clientes satisfação e maior entendimento sobre seu
+          pretendido negócio Jurídico.
+        </p>
+      </div>
+    </div>
+    <div class="navigation">
+      <button (click)="showSection('missao')">Missão</button>
+      <button (click)="showSection('visao')">Visão</button>
+      <button (click)="showSection('valores')">Valores</button>
+    </div>
+  </section>
+
+  <Section class="section-equipe">
+    <h2>Nossa Equipe</h2>
+    <img
+      src="../../../../assets/image/equipe.jpg"
+      alt="imagem-equipe-trabalho"
+    />
+  </Section>
+</section>
