@@ -1,0 +1,62 @@
+.container-duvidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0px;
+
+  color: white;
+  width: 100%;
+}
+.container-all {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(12, 81, 128);
+}
+.container-duvidas-left {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.container-servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-servicos h1 {
+  text-align: center;
+}
+.container-servicos ul {
+  width: 80%;
+}
+.container-custas {
+  width: 80%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+}
+.custas-button img {
+  width: 2vw;
+  margin: 8px;
+}
+.custas-button button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+.custas-button button:hover {
+  background-color: rgb(75, 71, 71);
+}
+
+.container-right {
+  border: 1px solid red;
+  width: 55%;
+}
+.container-right h3 {
+  text-align: center;
+}

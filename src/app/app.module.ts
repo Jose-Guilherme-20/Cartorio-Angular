@@ -10,9 +10,16 @@ import { CarrosselComponent } from './modules/components/carrossel/carrossel.com
 import { MainHomeComponent } from './modules/components/main-home/main-home.component';
 import { FooterComponent } from './modules/components/footer/footer.component';
 import { QuemSomosComponent } from './modules/pages/quem-somos/quem-somos.component';
+import { MainDuvidasFrequentesComponent } from './modules/components/main-duvidas-frequentes/main-duvidas-frequentes.component';
+import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/duvidas-frequentes.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, QuemSomosComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    QuemSomosComponent,
+    DuvidasFrequentesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
