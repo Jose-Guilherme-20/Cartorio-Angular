@@ -1,0 +1,59 @@
+<section class="container-duvidas">
+  <section class="container-all">
+    <section class="container-duvidas-left">
+      <section class="container-servicos">
+        <h1>Quais os serviços do Tabelionato?</h1>
+        <ul>
+          <li>
+            Abertura de Firma(Obrigatório para reconhecimento de assinatura)
+          </li>
+          <li>Reconhecimento de assinatura</li>
+          <li>Autenticação de documentos</li>
+          <li>Procuração Pública</li>
+          <li>Escrituras Públicas(em geral)</li>
+        </ul>
+      </section>
+
+      <section class="container-custas">
+        <h2>Custas Cartorárias</h2>
+        <p>Tabela de custas no formato excel.</p>
+        <div class="custas-button">
+          <a href="../../../../assets/Arquivos/Custas.xls" download="custas">
+            <button>
+              <span>
+                <img
+                  src="../../../../assets/icons/icon-download.svg"
+                  alt="icon-download-custas"
+                />
+              </span>
+              Download
+            </button>
+          </a>
+        </div>
+      </section>
+    </section>
+    <section class="container-right">
+      <h3>Duvidas frequentes</h3>
+      <div class="links">
+        <ul>
+          <li *ngFor="let item of items" (mouseover)="mostraResposta(item.id)">
+            {{ item.title }}
+          </li>
+        </ul>
+      </div>
+      <div id="respostas">
+        <div
+          *ngFor="let item of items"
+          [id]="item.id"
+          class="faq"
+          [style.display]="item.visible ? 'inherit' : 'none'"
+        >
+          <h3>
+            {{ item.title }}
+          </h3>
+          {{ item.content }}
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
