@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  height: auto;
+  background-color: rgb(12, 81, 128);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
+}
+.container-quem-somos {
+  max-width: 45%;
+}
+.section-pilares {
+  margin-bottom: 20px;
+}
+
+.section {
+  display: block;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section p {
+  margin: 0;
+}
+
+.navigation button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.section-equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.section-equipe img {
+  width: 25vw;
+  height: 27vh;
+}

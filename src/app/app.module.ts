@@ -9,9 +9,10 @@ import { AlertModule } from '@coreui/angular';
 import { CarrosselComponent } from './modules/components/carrossel/carrossel.component';
 import { MainHomeComponent } from './modules/components/main-home/main-home.component';
 import { FooterComponent } from './modules/components/footer/footer.component';
+import { QuemSomosComponent } from './modules/pages/quem-somos/quem-somos.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, QuemSomosComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   routesList = [
-    { path: '', label: 'Inicio' },
-    { path: '', label: 'Quem Somos' },
+    { path: '/home', label: 'Inicio' },
+    { path: '/quemSomos', label: 'Quem Somos' },
     { path: '', label: 'Protocolo' },
     { path: '', label: 'Servicos' },
     { path: '', label: 'Duvidas Frequentes' },

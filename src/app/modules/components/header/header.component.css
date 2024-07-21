@@ -52,6 +52,7 @@
 }
 .menu-navigation ul {
   display: flex;
+  margin: 0;
 }
 .menu-navigation ul li {
   list-style: none;
