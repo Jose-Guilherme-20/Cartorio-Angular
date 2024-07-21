@@ -19,6 +19,7 @@ import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/d
     HomeComponent,
     QuemSomosComponent,
     DuvidasFrequentesComponent,
+    MainDuvidasFrequentesComponent,
   ],
   imports: [
     BrowserModule,
