@@ -12,6 +12,9 @@ import { FooterComponent } from './modules/components/footer/footer.component';
 import { QuemSomosComponent } from './modules/pages/quem-somos/quem-somos.component';
 import { MainDuvidasFrequentesComponent } from './modules/components/main-duvidas-frequentes/main-duvidas-frequentes.component';
 import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/duvidas-frequentes.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { TabsProtocoloComponent } from './modules/components/tabs-protocolo/tabs-protocolo.component';
+import { ProtocoloComponent } from './modules/pages/protocolo/protocolo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/d
     QuemSomosComponent,
     DuvidasFrequentesComponent,
     MainDuvidasFrequentesComponent,
+    ProtocoloComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,8 +34,9 @@ import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/d
     CarrosselComponent,
     MainHomeComponent,
     FooterComponent,
+    TabsProtocoloComponent,
   ],
-  providers: [],
+  providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

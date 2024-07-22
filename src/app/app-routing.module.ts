@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './modules/pages/home/home.component';
 import { QuemSomosComponent } from './modules/pages/quem-somos/quem-somos.component';
 import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/duvidas-frequentes.component';
+import { ProtocoloComponent } from './modules/pages/protocolo/protocolo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'duvidasFrequentes',
     component: DuvidasFrequentesComponent,
+  },
+  {
+    path: 'protocolo',
+    component: ProtocoloComponent,
   },
 ];
 

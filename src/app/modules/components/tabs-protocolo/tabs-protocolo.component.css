@@ -1,0 +1,20 @@
+.tab-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajusta a largura para 80% do elemento pai */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+mat-tab-group {
+  display: flex;
+  border: 1px solid blue;
+  width: 80%;
+}
+.example-tab-icon {
+  margin-right: 8px;
+}
+.color-red {
+  color: red;
+}
+.color-green {
+  color: rgb(82, 218, 82);
+}

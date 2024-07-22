@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
   routesList = [
     { path: '/home', label: 'Inicio' },
     { path: '/quemSomos', label: 'Quem Somos' },
-    { path: '', label: 'Protocolo' },
+    { path: '/protocolo', label: 'Protocolo' },
     { path: '/duvidasFrequentes', label: 'Duvidas Frequentes' },
     // { path: 'pagina2', label: 'Página 2' },
     // { path: 'pagina3', label: 'Página 3' },
