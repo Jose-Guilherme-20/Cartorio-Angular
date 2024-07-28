@@ -8,9 +8,10 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { MainDuvidasFrequentesComponent } from '../components/main-duvidas-frequentes/main-duvidas-frequentes.component';
 import { TabsProtocoloComponent } from '../components/tabs-protocolo/tabs-protocolo.component';
 import { ButtonsProtocoloComponent } from '../components/buttons-protocolo/buttons-protocolo.component';
+import { CartorioService } from '../services/cartorio.service';
 
 @NgModule({
-  declarations: [HeaderComponent, ButtonsProtocoloComponent],
+  declarations: [HeaderComponent],
   imports: [
     CommonModule,
     CarrosselComponent,
@@ -24,7 +25,7 @@ import { ButtonsProtocoloComponent } from '../components/buttons-protocolo/butto
     FooterComponent,
     MainQuemSomosComponent,
     TabsProtocoloComponent,
-    ButtonsProtocoloComponent,
   ],
+  providers: [CartorioService],
 })
 export class CartorioModule {}

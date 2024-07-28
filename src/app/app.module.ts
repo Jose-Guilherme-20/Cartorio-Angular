@@ -15,6 +15,7 @@ import { DuvidasFrequentesComponent } from './modules/pages/duvidas-frequentes/d
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TabsProtocoloComponent } from './modules/components/tabs-protocolo/tabs-protocolo.component';
 import { ProtocoloComponent } from './modules/pages/protocolo/protocolo.component';
+import { ButtonsProtocoloComponent } from './modules/components/buttons-protocolo/buttons-protocolo.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ProtocoloComponent } from './modules/pages/protocolo/protocolo.componen
     MainHomeComponent,
     FooterComponent,
     TabsProtocoloComponent,
+    ButtonsProtocoloComponent,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

@@ -9,7 +9,17 @@ c-carousel-inner {
 c-carousel-control {
   width: auto;
   margin: 150px;
+  display: none;
 }
 .visually-hidden {
   border: 1px solid red;
+}
+
+@media (max-width: 650px) {
+  c-carousel-control {
+    display: none;
+  }
+  ::ng-deep .carousel-indicators {
+    display: none;
+  }
 }

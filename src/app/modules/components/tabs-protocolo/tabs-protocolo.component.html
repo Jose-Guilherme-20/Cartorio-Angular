@@ -1,38 +1,76 @@
-<section class="tab-container">
-  <mat-tab-group>
+<section class="tab-container" *ngIf="isDataAvailable">
+  <mat-tab-group #tabGroup>
     <mat-tab>
       <ng-template mat-tab-label>
-        <mat-icon class="material-symbols-outlined">done_outline </mat-icon>
+        <mat-icon
+          class="material-symbols-outlined"
+          [ngClass]="{
+            'color-green': isTabConcluida(0) && !hasPendingExigencia(0),
+            'color-red': !isTabConcluida(0) || hasPendingExigencia(0)
+          }"
+        >
+          {{
+            isTabConcluida(0) && !hasPendingExigencia(0)
+              ? "done_outline"
+              : "cancel"
+          }}
+        </mat-icon>
         Obter Documentação
       </ng-template>
       <ul>
-        <li style="list-style-type: none">
-          <mat-icon class="material-symbols-outlined color-green"
-            >done_outline </mat-icon
-          >Aguardando Documentação
-        </li>
-        <li style="list-style-type: none">
-          <mat-icon class="material-symbols-outlined color-red">
-            gpp_bad </mat-icon
-          >Aguardando identidade do José
+        <li
+          *ngFor="let item of tabs[0]?.obterDocumento?.exigencia"
+          [ngClass]="{
+            'color-green': item.concluida,
+            'color-red': !item.concluida
+          }"
+        >
+          <mat-icon class="material-symbols-outlined">
+            {{ item.concluida ? "done_outline" : "gpp_bad" }}
+          </mat-icon>
+          {{ item.exigencia }}
         </li>
       </ul>
     </mat-tab>
 
     <mat-tab>
       <ng-template mat-tab-label>
-        <mat-icon class="material-symbols-outlined">done_outline </mat-icon>
+        <mat-icon
+          class="material-symbols-outlined"
+          [ngClass]="{
+            'color-green': isTabConcluida(1) && !hasPendingExigencia(1),
+            'color-red': !isTabConcluida(1) || hasPendingExigencia(1)
+          }"
+        >
+          {{
+            isTabConcluida(1) && !hasPendingExigencia(1)
+              ? "done_outline"
+              : "cancel"
+          }}
+        </mat-icon>
         Aguardando assinaturas
       </ng-template>
-      Content 2
+      <ul>
+        <li
+          *ngFor="let item of tabs[1]?.AguardandoAssinatura?.exigencia"
+          [ngClass]="{
+            'color-green': item.concluida,
+            'color-red': !item.concluida
+          }"
+        >
+          <mat-icon class="material-symbols-outlined">
+            {{ item.concluida ? "done_outline" : "gpp_bad" }}
+          </mat-icon>
+          {{ item.exigencia }}
+        </li>
+      </ul>
     </mat-tab>
 
     <mat-tab>
       <ng-template mat-tab-label>
-        <mat-icon class="material-symbols-outlined">done_outline </mat-icon>
+        <mat-icon class="material-symbols-outlined">done_outline</mat-icon>
         Processo Finalizado
       </ng-template>
-
       Content 3
     </mat-tab>
   </mat-tab-group>

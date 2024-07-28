@@ -47,3 +47,24 @@ textarea {
   margin-left: 3rem;
   margin-top: 0.4rem;
 }
+
+@media (max-width: 600px) {
+  .container-home-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form button {
+    margin-left: 10%;
+  }
+  .form h1,
+  .container-localizacao h2 {
+    font-size: 30px;
+  }
+  .container-iframe {
+    width: 10rem;
+    height: 15.8rem;
+    margin-left: 3rem;
+    margin-top: 0.4rem;
+  }
+}

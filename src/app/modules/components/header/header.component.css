@@ -63,3 +63,16 @@
   text-decoration: none;
   color: aliceblue;
 }
+
+@media (max-width: 650px) {
+  .container-header {
+    width: 100%;
+  }
+  .menu-navigation {
+    width: 100%;
+  }
+  .info-wpp p img {
+    width: 30px;
+    margin-right: 5px;
+  }
+}

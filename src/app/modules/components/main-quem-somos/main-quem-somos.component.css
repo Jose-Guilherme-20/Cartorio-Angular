@@ -47,3 +47,12 @@
   width: 25vw;
   height: 27vh;
 }
+
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  .section-equipe img {
+    width: 300px;
+  }
+}

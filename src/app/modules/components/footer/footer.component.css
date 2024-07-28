@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   background-color: rgb(53, 52, 50);
   color: white;
+  height: auto;
 }
 
 .container-footer section {
@@ -21,4 +22,14 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .container-footer {
+    flex-direction: column;
+  }
+  section h1,
+  h2 {
+    font-weight: 200;
+  }
 }

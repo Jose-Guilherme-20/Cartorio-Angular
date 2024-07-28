@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   width: 100%; /* Ajusta a largura para 80% do elemento pai */
-  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  margin: 0 auto; /*Centraliza o contêiner horizontalmente */
+  border: 1px solid green;
 }
 mat-tab-group {
   display: flex;
@@ -17,4 +18,7 @@ mat-tab-group {
 }
 .color-green {
   color: rgb(82, 218, 82);
+}
+::ng-deep ul li {
+  list-style-type: none;
 }
